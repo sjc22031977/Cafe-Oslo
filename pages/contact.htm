@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+</head>
+<body>
+    <section class="form-details">
+        <form action="https://formspree.io/f/mpwlavjk" method="POST"  id="formularioContacto">
+            <span>DEJA UN MENSAJE</span>
+            <h2>Queremos saber de ti</h2>
+            <div class="campo-control">
+                <input type="text" id="tuNombre" placeholder="Tu Nombre">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="campo-control">
+                <input type="email" id="tuCorreo" placeholder="Correo electrónico">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="campo-control">
+                <input type="text" id="asunto" placeholder="Asunto">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="campo-control">
+                <textarea name="message" id="tuMensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                <div class="texto-error"></div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="../js/contact.js"></script>
+</body>
+</html> 
