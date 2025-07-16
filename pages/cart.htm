@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+      <main>
+        <!-- tabla productos -->
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>ELIMINAR</td>
+                        <td>IMAGEN</td>
+                        <td>PRODUCTO</td>
+                        <td>PRECIO</td>
+                        <td>CANTIDAD</td>
+                        <td>SUBTOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="tabla_carrito">
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="../img/productos/f1.jpg" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="../img/productos/f2.jpg" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="../img/productos/f3.jpg" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- aplicar cupon / total del carrito -->
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Aplicar Cupón</h3>
+                <div>
+                    <input type="text" placeholder="Ingresa tu cupón">
+                    <button class="normal">Aplicar</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Total del Carrito</h3>
+                <table>
+                    <tr>
+                        <td>Subtotal del Carrito</td>
+                        <td id="total">$335</td>
+                    </tr>
+                    <tr>
+                        <td>Envío</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong id="total">$335</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceder al pago</button>
+            </div>
+        </section>
+    </main>
+    <script src="../js/cart.js"></script> 
+</body>
+</html>
